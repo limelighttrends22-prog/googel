@@ -1,0 +1,8 @@
+{
+  "tool": "intelligence_audit_account",
+  "arguments": {
+    "customer_id": "1234567890",
+    "period": {"start": "2026-09-01", "end": "2026-09-30"}
+  },
+  "note": "Placeholder customer ID and illustrative dates. Replace with an authorized advertiser and a mature reporting period."
+}
