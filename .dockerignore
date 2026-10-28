@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+*.json
+!ads_mcp/*.json
+.venv
+.git
+__pycache__
+.pytest_cache
+tests
+build
+dist
+*.sqlite*
+*.db
+*.egg-info

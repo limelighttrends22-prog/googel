@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google-ads-ai-command-center"
+version = "0.1.0"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+dependencies = [
+    "google-ads==34.0.0",
+    "mcp[cli]==2.3.0",
+    "fastmcp==4.1.4",
+    "pydantic==2.14.1",
+    "python-dotenv==1.2.4",
+    "pyyaml==6.0.3"
+]
+
+description = "Explainable, read-only Google Ads intelligence and reproducible audits over MCP."
+readme = "README.md"
+authors = [
+    { name = "Dean Lukies", email = "lukiesd@users.noreply.github.com" },
+    { name = "Mattia Tommasone", email = "Raibaz@users.noreply.github.com" },
+    { name = "Ben Karl", email = "benrkarl@users.noreply.github.com" },
+]
+keywords = ["Google Ads", "Google Ads API", "MCP"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Programming Language :: Python"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black==26.10.1",
+    "pytest==9.2.0",
+    "pyfakefs==6.2.0",
+    "build==1.6.1",
+    "nox >=2025.5.1, <2026"
+]
+firestore = [
+    # 0.4.5 is the first release exposing the Firestore sanitization strategies.
+    "py-key-value-aio[firestore] >=0.4.5, <0.5.0"
+]
+
+[project.urls]
+homepage = "https://github.com/googleads/google-ads-mcp"
+repository = "https://github.com/googleads/google-ads-mcp.git"
+issues = "https://github.com/googleads/google-ads-mcp/issues"
+
+[project.scripts]
+google-ads-mcp = "ads_mcp.cli:main"
+ads-command-center = "ads_mcp.cli:main"
+google-ads-mcp-update-gaql = "ads_mcp.update_references:update_gaql_resource_file"
+
+[tool.pytest.ini_options]
+python_files = ["*_test.py", "test_*.py"]
+testpaths = ["tests"]
+addopts = "--ignore=tests/smoke/llm_test.py --ignore=tests/smoke/test_token_usage.py"
+
+[tool.setuptools.packages.find]
+include = ["ads_mcp*"]
+
+[tool.setuptools.package-data]
+ads_mcp = ["*.yaml", "*.txt"]

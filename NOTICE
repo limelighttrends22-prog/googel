@@ -1,0 +1,14 @@
+Google Ads AI Command Center
+Derived from the supplied google-ads-mcp-main archive, upstream package 0.0.5.
+Original source: Copyright 2026 Google LLC; Apache License, Version 2.0.
+Original author attribution is retained in pyproject.toml and source files.
+
+Modified distribution (2026-10-28): added deterministic intelligence modules,
+read-only report tools, scoped report storage, input and authentication
+hardening, CLI, packaging, tests and documentation. Google Ads API v25 retained.
+The upstream Dockerfile's modification disabling OAuth issuer-response
+protection was removed. No vendor authentication code is patched.
+
+This is an independently modified distribution, not a Google-endorsed product.
+Names and trademarks remain the property of their respective owners.
+See LICENSE, THIRD_PARTY_NOTICES.md and THIRD_PARTY_LICENSES/.

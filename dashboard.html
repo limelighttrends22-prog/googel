@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Limelight Ad Intelligence — Dashboard</title><link rel="stylesheet" href="dashboard.css"></head><body>
+<div class="layout"><aside id="sidebar"><div class="brand"><div class="symbol">L<span>•</span></div><div><b>LIMELIGHT</b><small>AD INTELLIGENCE</small></div></div><div class="side-label">WORKSPACE</div>
+<nav aria-label="Main navigation" id="nav">
+<button data-view="overview">◫ <span>Executive overview</span></button>
+<button data-view="competitors">♙ <span>Competitors</span></button>
+<button data-view="ads">▤ <span>Ad library</span></button>
+<button data-view="creative">✦ <span>Creative intelligence</span></button>
+<button data-view="watchlist">◎ <span>Watchlist</span></button>
+<div class="side-label">PERFORMANCE</div>
+<button data-view="meta">◈ <span>Meta Ads analytics</span></button>
+<button data-view="google">◉ <span>Google Ads analytics</span></button>
+<button data-view="unified">▧ <span>Unified performance</span></button>
+<button data-view="insights">✧ <span>Local analyst</span></button>
+<div class="side-label">MANAGEMENT</div>
+<button data-view="reports">▣ <span>Saved reports</span></button>
+<button data-view="data">⇆ <span>Data center</span></button>
+<button data-view="settings">⚙ <span>Settings & diagnostics</span></button>
+</nav><div class="sidebar-foot"><div class="status-dot">● <span>LOCAL-FIRST MODE</span></div><p>No cloud sync. No paid API required.</p></div></aside>
+<div class="main"><header class="top"><div class="crumb"><span class="crumb-muted">LIMELIGHT</span><span>/</span><span id="breadcrumb">Overview</span></div><div class="top-actions"><label class="search-wrap"><span>⌕</span><input id="globalSearch" type="search" placeholder="Search records…" aria-label="Search saved records"></label><button type="button" class="ghost" id="quickAdd">＋ Add ad</button><button type="button" id="mobileMenu" class="ghost mobile">☰ Menu</button></div></header>
+<main id="content" tabindex="-1" aria-live="polite"></main><footer class="foot">© Limelight Trends · Browser-local workspace · Public observations ≠ reported performance</footer></div></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<dialog id="modal"><form method="dialog" id="modalShell"><div class="modal-head"><h2 id="modalTitle">Edit record</h2><button aria-label="Close dialog" value="cancel" class="ghost">✕</button></div><div id="modalContent"></div><div class="modal-actions"><button value="cancel" class="ghost">Cancel</button><button type="button" id="modalSave" class="btn">Save</button></div></form></dialog>
+<input type="file" id="fileInput" accept=".csv,.json,text/csv,application/json" hidden>
+<script type="module" src="dashboard.js"></script></body></html>
