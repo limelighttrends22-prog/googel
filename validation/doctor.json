@@ -1,0 +1,14 @@
+{
+  "mode": "local_stdio_adc",
+  "legacy_developer_token_configured": false,
+  "api_access_requirement": "Google Cloud project must have the appropriate Google Ads API access level; legacy developer tokens are optional/ignored following the September 2026 sunset",
+  "customer_allowlist_configured": false,
+  "versions": {
+    "fastmcp": "4.1.4",
+    "mcp": "2.3.0",
+    "google-ads": "34.0.0"
+  },
+  "live_authentication_verified": false,
+  "live_ad_mutations_available": false,
+  "next_step": "Configure credentials outside chat, call customers_list_accessible_customers, select an advertiser, then intelligence_audit_account with explicit dates."
+}
