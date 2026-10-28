@@ -1,0 +1,8 @@
+{
+  "environment": "separate clean Linux Python 3.12 virtual environment",
+  "installed_wheel_import": true,
+  "stdio_registered_tools": 20,
+  "stdio_metric_tool_called": true,
+  "pip_check": "No broken requirements found",
+  "live_google_ads_tested": false
+}

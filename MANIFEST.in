@@ -1,0 +1,11 @@
+#include field data for search
+include ads_mcp/*.json
+include ads_mcp/*.txt
+#include the bundled default tools configuration
+include ads_mcp/*.yaml
+include NOTICE CHANGELOG.md THIRD_PARTY_NOTICES.md
+include requirements*.txt
+recursive-include docs *.md
+recursive-include examples *.json *.csv
+recursive-include THIRD_PARTY_LICENSES *
+recursive-include tests *.py *.json

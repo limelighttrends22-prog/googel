@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-28",
+  "python": "3.12.14",
+  "test_summary": {
+    "passed": 129,
+    "skipped": 3
+  },
+  "runtime_lock_packages": 80,
+  "wheel_build": "passed",
+  "source_distribution_build": "passed",
+  "clean_wheel_install": "passed",
+  "clean_wheel_stdio_tool_count": 20,
+  "clean_wheel_stdio_glossary_call": "passed",
+  "wheel_source_bytes_match": true,
+  "documentation_relative_links": "passed",
+  "source_zip_crc": "passed",
+  "private_credentials_databases_virtualenvs_excluded": true,
+  "live_api_oauth_chatgpt_windows_docker": "unverified"
+}

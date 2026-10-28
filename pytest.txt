@@ -1,0 +1,32 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.2.0, pluggy-1.7.0
+rootdir: /workspace/scratch/ff5e13333431/google-ads-command-center
+configfile: pyproject.toml
+testpaths: tests
+plugins: platformdirs-4.13.7, pyfakefs-6.2.0, anyio-4.15.1
+collected 132 items
+
+tests/auth_config_test.py .......ss.s.                                   [  9%]
+tests/config_test.py ..........                                          [ 16%]
+tests/http_auth_test.py .                                                [ 17%]
+tests/intelligence_test.py ............................................. [ 51%]
+.................                                                        [ 64%]
+tests/resources/discovery_test.py .                                      [ 65%]
+tests/resources/metrics_test.py .                                        [ 65%]
+tests/resources/release_notes_test.py .                                  [ 66%]
+tests/resources/segments_test.py .                                       [ 67%]
+tests/server_test.py ....                                                [ 70%]
+tests/smoke/smoke_test.py ..                                             [ 71%]
+tests/subscriptions_compat_test.py ..                                    [ 73%]
+tests/tools/core_test.py .                                               [ 74%]
+tests/tools/get_resource_metadata_test.py .....                          [ 78%]
+tests/tools/schema_test.py ..                                            [ 79%]
+tests/tools/search_test.py .......                                       [ 84%]
+tests/tools_mounting_test.py ....                                        [ 87%]
+tests/utils_test.py ................                                     [100%]
+
+=========================== short test summary info ============================
+SKIPPED [1] tests/auth_config_test.py:148: firestore package not installed
+SKIPPED [1] tests/auth_config_test.py:171: firestore package not installed
+SKIPPED [1] tests/auth_config_test.py:138: redis package not installed
+======================== 129 passed, 3 skipped in 8.43s ========================
